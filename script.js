@@ -29,10 +29,23 @@ function pollGamepad() {
   const gamepads = navigator.getGamepads();
   if (gamepads[0]) {
     const gp = gamepads[0];
-    if (gp.buttons[0].pressed) {
+    if (gp.buttons[X].pressed) {
       alert("Bouton X pressé !");
     }
   }
   requestAnimationFrame(pollGamepad);
 }
 pollGamepad();
+
+function pollGamepad() {
+  const gamepads = navigator.getGamepads();
+  if (gamepads[0]) {
+    const gp = gamepads[0];
+    if (gp.buttons[O].pressed) {
+      alert("Bouton O pressé !");
+    }
+  }
+  requestAnimationFrame(pollGamepad);
+}
+pollGamepad();
+  
