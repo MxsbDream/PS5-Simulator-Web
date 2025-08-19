@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PS5 Simulator</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <script defer src="script.js"></script>
+</head>
+<body class="bg-black text-white overflow-hidden">
+  <!-- Boot Screen -->
+  <div id="boot" class="fixed inset-0 flex items-center justify-center bg-black z-50">
+    <h1 class="text-5xl font-bold animate-pulse">PlayStation 5</h1>
+  </div>
+
+  <!-- Main UI -->
+  <div id="mainUI" class="hidden h-screen flex flex-col items-center justify-center space-y-8">
+    <div class="text-3xl font-semibold">Bienvenue dans le simulateur PS5</div>
+    <div class="grid grid-cols-3 gap-6">
+      <div class="bg-gray-800 p-6 rounded-lg hover:scale-105 transition transform">🎮 Jeux</div>
+      <div class="bg-gray-800 p-6 rounded-lg hover:scale-105 transition transform">📺 Média</div>
+      <div class="bg-gray-800 p-6 rounded-lg hover:scale-105 transition transform">⚙️ Paramètres</div>
+    </div>
+    <div id="controllerStatus" class="mt-6 text-sm text-gray-400">Manette non détectée</div>
+  </div>
+</body>
+        </html>
+        
